@@ -1,4 +1,5 @@
 import { navbarItems } from "@/utils/data";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 
@@ -17,11 +18,11 @@ const Navbar = () => {
           <ul className="flex gap-5">
             {navbarItems.map((item, i) => (
               <li key={i}>
-                <a className="font-semibold" href={`${item?.path}`}>
+                <Link className="font-semibold" href={`${item?.path}`}>
                   {item.name}
-                </a>
+                </Link>
                 {item.path === pathname && (
-                  <div className="w-full h-[3px] bg-blue-700"></div>
+                  <div className="w-full h-[3px] bg-blue-700 slide-underline"></div>
                 )}
               </li>
             ))}

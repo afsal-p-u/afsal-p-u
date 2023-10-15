@@ -1,11 +1,8 @@
+import { About } from '@/components';
 import React from 'react'
 
 const index = () => {
-  return (
-    <div className='bg-black'>
-      <div className="container mx-auto"></div>
-    </div>
-  )
-}
+  return <About />
+};
 
-export default index
+export default index;

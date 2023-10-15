@@ -1,1 +1,5 @@
 export { default as Navbar } from '../components/Navbar'
+export { default as InfoItem } from '../components/InfoItem'
+export { default as About } from '../components/About'
+export { default as Hero } from './Hero'
+export { default as Skills } from './Skills'

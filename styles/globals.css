@@ -20,3 +20,42 @@
     transform: translateX(auto);
   }
 }
+
+.slide-left {
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(auto);
+  }
+}
+
+.slide-bottom {
+	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(auto);
+  }
+}
+
+.slide-underline {
+	animation: slide-underline 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-underline {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(auto);
+  }
+}

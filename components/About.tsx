@@ -1,0 +1,75 @@
+import React, { useState } from "react";
+import { InfoItem } from "@/components";
+import { experienceData, educationData } from "@/utils/data";
+
+const About = () => {
+  const [selected, setSelected] = useState("experience");
+
+  return (
+    <div className="bg-black text-white">
+      <div className="container mx-auto h-screen flex gap-5">
+        {/* about */}
+        <div className="flex-1 rounded-e-lg flex justify-center flex-col slide-right">
+          <div className="flex mb-5">
+            <div className="px-32 py-2 bg-blue-700 rounded-ss-full rounded-ee-full text-xl font-medium">
+              About Me
+            </div>
+          </div>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industrys standard dummy text
+            ever since the 1500s when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the
+          </p>
+        </div>
+
+        {/* experience and eduacation */}
+        <div className="flex-1 flex flex-col justify-center items-end">
+          <div className="slide-left">
+            <ul className="flex gap-5 mb-5 justify-end">
+              <li
+                className="cursor-pointer"
+                onClick={() => setSelected("experience")}
+              >
+                Experience
+                {selected === "experience" && (
+                  <div className="w-full h-[3px] bg-blue-700 mt-1 slide-underline"></div>
+                )}
+              </li>
+              <li
+                className="cursor-pointer"
+                onClick={() => setSelected("education")}
+              >
+                Education
+                {selected === "education" && (
+                  <div className="w-full h-[3px] bg-blue-700 mt-1 slide-underline"></div>
+                )}
+              </li>
+            </ul>
+
+            {/* item */}
+            {selected === "education" ? (
+              <div className="flex flex-col gap-2 slide-bottom">
+                {educationData.map((item, i) => (
+                  <InfoItem key={i} {...item} />
+                ))}
+              </div>
+            ) : (
+              <div className="flex flex-col gap-2">
+                {experienceData.map((item, i) => (
+                  <div className="slide-bottom" key={i}>
+                    <InfoItem {...item} />
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;
