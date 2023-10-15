@@ -10,7 +10,7 @@ export default function Home() {
         {/* basic info */}
         <div className="flex flex-col gap-1 slide-right">
           <p className="text-3xl font-medium">
-            {"<>"} Hi i'<span className="text-blue-700">m</span> {"</>"}
+            {"<>"} Hi i&apos<span className="text-blue-700">m</span> {"</>"}
           </p>
           <h1 className="text-7xl font-semibold text-blue-700">
             {"<"} <span className="text-white">AFSAL P U</span> {">"}
