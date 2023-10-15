@@ -29,7 +29,8 @@ export default function Home() {
             </button>
           </div>
         </div>
-
+ 
+ 
         {/* image box */}
         <div className=""></div>
       </div>
