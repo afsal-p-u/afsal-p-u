@@ -1,5 +1,6 @@
 import { navbarItems } from "@/utils/data";
 import Link from "next/link";
+import { AiOutlineMenu } from 'react-icons/ai'
 import { useRouter } from "next/router";
 import React from "react";
 
@@ -8,13 +9,13 @@ const Navbar = () => {
 
   return (
     <div className="bg-black">
-      <div className="text-white py-3 container mx-auto flex items-center justify-between sticky top-0">
-        <h1 className="text-3xl font-semibold">
+      <div className="text-white py-3 container px-5 sm:px-0 mx-auto flex items-center justify-between sticky top-0">
+        <h1 className="text-2xl font-semibold sm:text-3xl">
           <span className="text-blue-700">A</span>fsal
           <span className="text-blue-700">.</span>
         </h1>
 
-        <div className="">
+        <div className="hidden sm:block">
           <ul className="flex gap-5">
             {navbarItems.map((item, i) => (
               <li key={i}>
@@ -27,6 +28,10 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+        </div>
+
+        <div className="block sm:hidden">
+          <AiOutlineMenu className="text-xl cursor-pointer" />
         </div>
       </div>
     </div>
