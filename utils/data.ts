@@ -62,3 +62,22 @@ export const educationData = [
         year: "2015-18"
     },
 ]
+
+// skills 
+export const skillsItems = [
+    {
+        name: "Frontend",
+    },
+    {
+        name: "Backend",
+    },
+    {
+        name: "Database",
+    },
+    {
+        name: "UI/UX",
+    },
+    {
+        name: "Others",
+    },
+]
