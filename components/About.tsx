@@ -7,15 +7,18 @@ const About = () => {
 
   return (
     <div className="bg-black text-white">
-      <div className="container mx-auto h-screen flex gap-5">
+      <div className="container mx-auto h-screen flex gap-5 flex-col sm:flex-row">
         {/* about */}
-        <div className="flex-1 rounded-e-lg flex justify-center flex-col slide-right">
+        <div className="flex-1 rounded-e-lg flex justify-center flex-col slide-right max-sm:px-5">
           <div className="flex mb-5">
-            <div className="px-32 py-2 bg-blue-700 rounded-ss-full rounded-ee-full text-xl font-medium">
+            <div 
+              className="px-32 py-2 bg-blue-700 rounded-ss-full rounded-ee-full text-sm md:text-base sm:text-xl font-medium
+              max-sm:px-16 max-md:px-20"
+            >
               About Me
             </div>
           </div>
-          <p>
+          <p className="md:text-base sm:text-sm text-xs ">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industrys standard dummy text
             ever since the 1500s when an unknown printer took a galley of type
@@ -26,11 +29,11 @@ const About = () => {
         </div>
 
         {/* experience and eduacation */}
-        <div className="flex-1 flex flex-col justify-center items-end">
+        <div className="flex-1 flex flex-col justify-center items-end max-sm:px-5">
           <div className="slide-left">
             <ul className="flex gap-5 mb-5 justify-end">
               <li
-                className="cursor-pointer"
+                className="cursor-pointer text-sm sm:text-base"
                 onClick={() => setSelected("experience")}
               >
                 Experience
@@ -39,7 +42,7 @@ const About = () => {
                 )}
               </li>
               <li
-                className="cursor-pointer"
+                className="cursor-pointer text-xs sm:text-sm md:text-base"
                 onClick={() => setSelected("education")}
               >
                 Education
