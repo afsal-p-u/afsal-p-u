@@ -7,11 +7,11 @@ const Skills = () => {
 
   return (
     <div className='bg-black text-white'>
-      <div className="container mx-auto h-screen flex flex-col justify-center slide-right">
+      <div className="container mx-auto h-screen flex flex-col justify-center slide-right max-sm:px-5">
         {/* categories */}
-        <ul className='flex gap-5'>
+        <ul className='flex gap-5 flex-wrap'>
           {skillsItems.map((item, i) => (
-            <li key={i} className='cursor-pointer' onClick={() => setSelected(item.name)}>
+            <li key={i} className='cursor-pointer text-xs sm:text-sm md:text-base' onClick={() => setSelected(item.name)}>
               {item.name}
 
               {item.name === selected && (
@@ -20,23 +20,24 @@ const Skills = () => {
             </li>
           ))}
         </ul>
+        <hr  className='mt-2 max-sm:block hidden border-gray-900'/>
 
         {/* categories items */}
         <ul className='mt-5 flex flex-col gap-2'>
           {selected === 'Frontend' && frontendSkillsData.map((item, i) => (
-            <li key={i}>{item.name}</li>
+            <li className='text-xs sm:text-sm md:text-base' key={i}>{item.name}</li>
           ))}
           {selected === 'Backend' && backendSkillsData.map((item, i) => (
-            <li key={i}>{item.name}</li>
+            <li className='text-xs sm:text-sm md:text-base' key={i}>{item.name}</li>
           ))}
           {selected === 'Database' && databaseSkillsData.map((item, i) => (
-            <li key={i}>{item.name}</li>
+            <li className='text-xs sm:text-sm md:text-base' key={i}>{item.name}</li>
           ))}
           {selected === 'UI/UX' && uiuxSkillsData.map((item, i) => (
-            <li key={i}>{item.name}</li>
+            <li className='text-xs sm:text-sm md:text-base' key={i}>{item.name}</li>
           ))}
           {selected === 'Others' && othersSkillsData.map((item, i) => (
-            <li key={i}>{item.name}</li>
+            <li className='text-xs sm:text-sm md:text-base' key={i}>{item.name}</li>
           ))}
         </ul>
       </div>
