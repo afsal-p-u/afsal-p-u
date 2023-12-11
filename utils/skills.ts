@@ -7,22 +7,19 @@ export const frontendSkillsData = [
         name: "CSS",
     },
     { 
-        name: "JavaScript/TypeScript",
+        name: "JavaScript",
     },
     { 
         name: "React",
-    },
-    { 
-        name: "Angular",
-    },
-    { 
-        name: "NextJS",
-    },
+    }
 ]
 
 export const backendSkillsData = [
     { 
         name: "Node Express",
+    },
+    { 
+        name: "Asp.Net",
     },
 ]
 
@@ -32,6 +29,9 @@ export const databaseSkillsData = [
     },
     { 
         name: "MySQL",
+    },
+    { 
+        name: "SQL Server",
     },
 ]
 
@@ -49,15 +49,9 @@ export const othersSkillsData = [
         name: "Responsive Designs",
     },
     { 
-        name: "Prisma",
-    },
-    { 
         name: "Tailwind CSS",
     },
     { 
-        name: "Redux",
-    },
-    { 
-        name: "Firebase",
+        name: "Bootstrap",
     },
 ]
