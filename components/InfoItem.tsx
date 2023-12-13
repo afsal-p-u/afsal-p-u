@@ -14,7 +14,7 @@ const InfoItem = ({ name, location, year, organization }: InfoItemProps) => {
         <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-blue-700 mt-2"></div>
       </div>
       <div className="">
-        <h3 className="text-sm font-medium md:text-xl sm:text-lg">{name}</h3>
+        <h3 className="text-xs font-medium md:text-base sm:text-sm">{name}</h3>
         <p className="text-slate-400 font-medium text-xs sm:text-sm md:text-base">
           {organization}, <span className="text-sm">{location}</span>
         </p>
