@@ -38,7 +38,7 @@ const Navbar = () => {
             <>
             <div className="absolute top-10 right-0 flex flex-col gap-2 bg-blue-700 rounded p-5">
               {navbarItems.map((item, i) => (
-                <Link href={`${item?.path}`} className="text-sm max-sm:text-xs">{item.name}</Link>
+                <Link href={`${item?.path}`} className="text-sm max-sm:text-xs" key={i}>{item.name}</Link>
               ))}
             </div>
             </>
