@@ -8,7 +8,7 @@ export const navbarItems = [
         path: "/about"
     },
     {
-        name: "Skils",
+        name: "Skills",
         path: "/skills"
     },
     {

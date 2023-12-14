@@ -6,7 +6,7 @@ const Skills = () => {
   const [selected, setSelected] = useState('Frontend')
 
   return (
-    <div className='bg-black text-white max-sm:pt-10'>
+    <div className='bg-black text-white'>
       <div className="container mx-auto h-screen flex flex-col justify-center slide-right max-sm:px-5">
         {/* categories */}
         <ul className='flex gap-5 flex-wrap'>

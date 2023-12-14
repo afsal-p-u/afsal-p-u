@@ -15,8 +15,8 @@ const InfoItem = ({ name, location, year, organization }: InfoItemProps) => {
       </div>
       <div className="">
         <h3 className="text-xs font-medium md:text-base sm:text-sm">{name}</h3>
-        <p className="text-slate-400 font-medium text-xs sm:text-sm md:text-base">
-          {organization}, <span className="text-sm">{location}</span>
+        <p className="text-slate-400 font-medium text-xs md:text-sm">
+          {organization}, <span className="text-xs md:text-sm">{location}</span>
         </p>
       </div>
       <div className="flex items-end">
