@@ -2,7 +2,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div className="bg-black">
+    <div className="bg-black max-sm:pt-10">
       <div className="text-white container mx-auto h-screen flex items-center flex-col md:flex-row pt-10 md:pt-0">
         {/* basic info */}
         <div className="flex flex-col gap-1 slide-right flex-1">

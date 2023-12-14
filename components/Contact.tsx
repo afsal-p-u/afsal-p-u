@@ -4,8 +4,8 @@ import { InputFields } from "@/utils/contact";
 
 const Contact = () => {
   return (
-    <div className="bg-black text-white">
-      <div className="container mx-auto h-screen flex items-center">
+    <div className="bg-black text-white max-sm:pt-10">
+      <div className="container mx-auto h-screen flex items-center ">
         <div className="flex justify-between w-full sm:flex-row flex-col md:gap-24 max-sm:px-5 max-sm:gap-5">
           <div className="flex gap-3 flex-col flex-1 slide-right">
             {InputFields.map((item, i) => (

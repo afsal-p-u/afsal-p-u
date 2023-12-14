@@ -6,7 +6,7 @@ const About = () => {
   const [selected, setSelected] = useState("experience");
 
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black text-white max-sm:pt-10">
       <div className="container mx-auto h-screen flex gap-5 flex-col sm:flex-row">
         {/* about */}
         <div className="flex-1 rounded-e-lg flex justify-center flex-col slide-right max-sm:px-5">
