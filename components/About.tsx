@@ -30,7 +30,7 @@ const About = () => {
 
         {/* experience and eduacation */}
         <div className="flex-1 flex flex-col justify-center items-end max-sm:px-5">
-          <div className="slide-left">
+          <div className="slide-right">
             <ul className="flex gap-5 mb-5 justify-end">
               <li
                 className="cursor-pointer text-sm sm:text-base"
