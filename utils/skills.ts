@@ -19,16 +19,13 @@ export const backendSkillsData = [
         name: "Node Express",
     },
     { 
-        name: "Asp.Net",
+        name: "Asp.Net, MVC, API",
     },
 ]
 
 export const databaseSkillsData = [
     { 
         name: "MongoDB",
-    },
-    { 
-        name: "MySQL",
     },
     { 
         name: "SQL Server",
@@ -50,8 +47,5 @@ export const othersSkillsData = [
     },
     { 
         name: "Tailwind CSS",
-    },
-    { 
-        name: "Bootstrap",
-    },
+    }
 ]
