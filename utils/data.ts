@@ -23,22 +23,28 @@ export const navbarItems = [
 
 export const experienceData = [
     { 
-        name: "Security Analyst Intern",
-        organization: "EYEQDOTNET",
-        location: "Mangalore",
-        year: "2020-21 (1 month)"
-    },
-    { 
-        name: "Asp.Net Angular FullStack Apprenticeship",
-        organization: "Luminar TechnoLab",
-        location: "Kochi",
-        year: "2023-present"
+        name: "Software Engineer",
+        organization: "Benzy Infotech Pvt.Ltd",
+        location: "Kochi, Kerala",
+        year: "2024 Jan - 2024 Present"
     },
     { 
         name: "MERN Developer Intern",
         organization: "Achintya Solutions",
         location: "Pune, Maharashtra",
-        year: "2023-present"
+        year: "2023 Aug - 2023 Feb"
+    },
+    { 
+        name: "Asp.Net Angular FullStack Apprenticeship",
+        organization: "Luminar TechnoLab",
+        location: "Kochi, Kerala",
+        year: "2023 Aug - 2023 Jan"
+    },
+    { 
+        name: "Security Analyst Intern",
+        organization: "EYEQDOTNET",
+        location: "Mangalore, Karnataka",
+        year: "2020 Jan - 2020 Feb"
     },
 ]
 
