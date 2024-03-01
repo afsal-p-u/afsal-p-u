@@ -25,19 +25,34 @@ const Skills = () => {
         {/* categories items */}
         <ul className='mt-5 flex flex-col gap-2'>
           {selected === 'Frontend' && frontendSkillsData.map((item, i) => (
-            <li className='text-xs sm:text-sm md:text-base' key={i}>{item.name}</li>
+            <li className='text-xs sm:text-sm md:text-base flex gap-2 items-center' key={i}>
+              <div className="w-[10px] h-[10px] rounded-full bg-blue-700"></div>
+              {item.name}
+            </li>
           ))}
           {selected === 'Backend' && backendSkillsData.map((item, i) => (
-            <li className='text-xs sm:text-sm md:text-base' key={i}>{item.name}</li>
+            <li className='text-xs sm:text-sm md:text-base flex gap-2 items-center' key={i}>
+              <div className="w-[10px] h-[10px] rounded-full bg-blue-700"></div>
+              {item.name}
+            </li>
           ))}
           {selected === 'Database' && databaseSkillsData.map((item, i) => (
-            <li className='text-xs sm:text-sm md:text-base' key={i}>{item.name}</li>
+            <li className='text-xs sm:text-sm md:text-base flex gap-2 items-center' key={i}>
+              <div className="w-[10px] h-[10px] rounded-full bg-blue-700"></div>
+              {item.name}
+            </li>
           ))}
           {selected === 'UI/UX' && uiuxSkillsData.map((item, i) => (
-            <li className='text-xs sm:text-sm md:text-base' key={i}>{item.name}</li>
+            <li className='text-xs sm:text-sm md:text-base flex gap-2 items-center' key={i}>
+              <div className="w-[10px] h-[10px] rounded-full bg-blue-700"></div>
+              {item.name}
+            </li>
           ))}
           {selected === 'Others' && othersSkillsData.map((item, i) => (
-            <li className='text-xs sm:text-sm md:text-base' key={i}>{item.name}</li>
+            <li className='text-xs sm:text-sm md:text-base flex gap-2 items-center' key={i}>
+              <div className="w-[10px] h-[10px] rounded-full bg-blue-700"></div>
+              {item.name}
+            </li>
           ))}
         </ul>
       </div>
