@@ -1,2 +1,2 @@
 # Full Stack Developer
-- MEARN, NEXTJS, ASP.NET
+- MERN, NEXTJS, ASP.NET
