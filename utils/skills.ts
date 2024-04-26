@@ -10,7 +10,7 @@ export const frontendSkillsData = [
         name: "JavaScript",
     },
     { 
-        name: "React",
+        name: "React, NextJS",
     }
 ]
 
@@ -43,9 +43,18 @@ export const othersSkillsData = [
         name: "Git/GitHub/GitLab",
     },
     { 
+        name: "AWS",
+    },
+    { 
         name: "Responsive Designs",
     },
     { 
         name: "Tailwind CSS",
-    }
+    },
+    { 
+        name: "Firebase",
+    },
+    { 
+        name: "Prisma",
+    },
 ]

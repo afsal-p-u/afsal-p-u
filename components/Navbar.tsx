@@ -14,10 +14,12 @@ const Navbar = () => {
         className="py-3 container px-5 sm:px-0 mx-auto flex items-center justify-between
         "
       >
-        <h1 className="text-2xl font-semibold sm:text-3xl">
-          <span className="text-blue-700">A</span>fsal
-          <span className="text-blue-700">.</span>
-        </h1>
+        <Link href={'/'}>
+          <h1 className="text-2xl font-semibold sm:text-3xl">
+            <span className="text-blue-700">A</span>fsal
+            <span className="text-blue-700">.</span>
+          </h1>
+        </Link>
 
         <div className="hidden sm:block">
           <ul className="flex gap-5">
