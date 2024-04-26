@@ -4,7 +4,7 @@ import ProjectItem from "./ProjectItem";
 const Projects = () => {
   return (
     <div className="bg-black text-white">
-      <div className="container mx-auto h-screen">
+      <div className="container mx-auto h-screen max-sm:px-5">
         <div className="pt-10">
           <select
             name=""

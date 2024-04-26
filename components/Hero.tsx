@@ -46,21 +46,21 @@ const Home = () => {
               className="w-[100%] h-[100%] object-cover"
             />
           </div>
-          <div className="flex gap-7">
+          <div className="flex gap-7 max-sm:gap-4">
             <Link href="https://github.com/afsal-p-u" target="_blank">
-              <FaGithub className="text-2xl text-blue-700" />
+              <FaGithub className="text-lg text-blue-700 sm:text-2xl" />
             </Link>
             <Link href="https://gitlab.com/afsal_p_u" target="_blank">
-              <FiGitlab className="text-2xl text-blue-700" />
+              <FiGitlab className="text-lg text-blue-700 sm:text-2xl" />
             </Link>
             <Link href="https://www.linkedin.com/in/afsal-p-u/" target="_blank">
-              <FaLinkedinIn className="text-2xl text-blue-700" />
+              <FaLinkedinIn className="text-lg text-blue-700 sm:text-2xl" />
             </Link>
             <Link href="https://www.instagram.com/afsal_p_u/" target="_blank">
-              <FaInstagram className="text-2xl text-blue-700" />
+              <FaInstagram className="text-lg text-blue-700 sm:text-2xl" />
             </Link>
             <Link href="https://twitter.com/_afsal_p_u_" target="_blank">
-              <FaTwitter className="text-2xl text-blue-700" />
+              <FaTwitter className="text-lg text-blue-700 sm:text-2xl" />
             </Link>
           </div>
         </div>
