@@ -4,12 +4,17 @@ import { InputFields } from "@/utils/contact";
 
 const Contact = () => {
   const [inputs, setInputs] = useState(null);
+  const [message, setMessage] = useState('')
 
   const handleInputs = (e: any) => {
     setInputs((prev: any) => {
       return { ...prev, [e.target.name]: e.target.value };
     });
   };
+
+  setTimeout(() => {
+    setMessage('')
+  }, 20000)
 
   const sentMail = async (e: any) => {
     e.preventDefault();
@@ -23,10 +28,10 @@ const Contact = () => {
     });
 
     if (!res.ok) {
-      console.log("Error");
+      setMessage("Failed");
     } else {
       const data = await res.json();
-      console.log(data);
+      setMessage("Success");
       e.target.reset()
     }
   };
@@ -73,6 +78,11 @@ const Contact = () => {
           </div>
         </form>
       </div>
+      {message && (
+        <div className="absolute right-5 bottom-10 text-sm px-7 py-1 border-[1px] border-blue-700 rounded-sm text-blue-700">
+          {message}
+        </div>
+      )}
     </div>
   );
 };

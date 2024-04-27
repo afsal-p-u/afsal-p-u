@@ -38,7 +38,7 @@ const Projects = () => {
           </select>
         </div>
         <div className="flex pt-5 gap-5 flex-wrap">
-          <ProjectItem />
+          <ProjectItem /> 
         </div>
       </div>
     </div>
